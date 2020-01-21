@@ -1,0 +1,612 @@
+/*estilizacão*/
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+/* Cabeçalho */
+header{
+    width: 100vw;
+    height: 70px;
+    max-height: 70px;
+    background-color: black;
+    color: white;
+    position: fixed;
+    z-index: 2;
+    background-color: #730202;
+}
+
+@media screen and (min-device-width:1370px){
+
+    #logo{
+        width: 150px;
+        height: 50px;
+    /*    background-color: white;*/
+        float: left;
+        margin-top: 10px;
+        margin-left: 5px;
+        margin-right: 50px;
+    }
+
+    .notebook,#menu_mobile, .display_none{
+	    display: none;
+    }
+    
+    nav{
+        min-width: 300px;
+        max-width: 726px;
+        width: auto;
+        height: 35px;
+        float: left;
+        margin-top: 25px;
+    }
+    /* Menu Principal */
+    #menu{
+        width: inherit;
+        height: inherit;
+    }
+
+    .menu_itens{
+        min-width: 70px;
+        width: auto;
+        height: inherit;
+        float: left;
+        text-align: center;
+        padding-top: 9px;
+        padding-left: 10px;
+        padding-right: 10px;
+        color: white;
+        border-right: solid 1px white;
+        box-sizing: border-box;
+        position: relative;
+        font-family: 'Nunito',sans-serif;
+        font-size: 14px;
+    }
+
+    /*menu Principal: efeito borda ao selecionar(Hover)*/
+    header nav #menu .menu_itens::after{
+        content: '';
+        float: left;    
+        display: inline-block;
+        height: 5px;
+        width: 100%;
+        border-bottom: 2px solid #BF0404;
+        opacity: 0;
+        -webkit-transition: opacity 0.35s,-webkit-transform .35s;
+        transition: opacity 0.35s,transform .35s;
+        -webkit-transform: scale(0,1);
+        transform: scale(0,1);
+    }
+
+    header nav #menu .menu_itens:hover::after{
+        opacity:1;
+        -webkit-transform:scale(1);
+        transform:scale(1);
+    }
+
+
+    #login{
+        width: auto;
+        min-height: 50px;
+        max-width: 395px;
+        height: auto;
+        float: left;
+        margin-top: 10px;
+        margin-left: 10px;
+
+    }
+
+    .inserir{
+        width: 170px;
+        height: inherit;
+        float: left;
+        margin-right: 10px;
+    }
+
+    .txtinserir{
+        width: inherit;
+        height: 32px;
+        font-size: 15px;
+    }
+
+    #botao{
+        width: 35px;
+        height: 35px;
+        margin-top: 20px;
+        float: left;
+        border-radius: 25%;
+    }
+
+    #botao_ok{
+        width: inherit;
+        height: inherit;
+        border-radius: 25%;
+        background-color: #69C400;
+        border: 0px;
+    }
+
+    #botao_ok:active{
+        box-shadow: 3px 3px 5px black;
+        color: white;
+    }
+
+    /* Rede Sociais */
+    #caixa_redes_sociais{
+        width: 50px;
+        min-height: 50px;
+        height: auto;
+        margin-top: 44%;
+        margin-right: -470px;
+        float: right;
+        position: relative;
+        z-index: 999;
+    }
+
+    .rede_social{
+        width: inherit;
+        height: 50px;
+    }
+
+    .rede_social:hover{
+        border-radius: 50%;
+        box-shadow: 2px 2px 10px black;
+        cursor: pointer;
+    }
+
+    /*Rodapé*/
+    footer{
+        width: 100%;
+        height: 100px;
+        background-color: #260306;
+        clear: both;
+    }
+
+    #caixa_sistema{
+        width: 200px;
+        height: inherit;
+        float: left;
+    }
+
+    #sistema_interno{
+        width: 180px;
+        height: 50px;
+        float: right;
+        margin-top: 35px;
+        text-align: center;
+        padding-top: 10px;
+        box-sizing: border-box;
+        background-color: rgba(105, 196, 0,0.6);
+        color: white;
+        cursor: pointer;    
+    }
+
+    #sistema_interno:hover{
+        transform: scale(1.05);
+    }
+
+    #caixa_info{
+        width: 600px;
+        height: inherit;
+        float: left;
+        margin-left: 100px;
+        padding-top: 65px;
+        box-sizing: border-box;
+    }
+
+    .texto{
+        text-align: center;
+        font-size: 18px;
+        padding: 0px;
+        color: white;
+    }
+
+    #caixa_mobile{
+        width: 300px;
+        height: inherit;
+        float: right;
+    }
+
+
+    #img_mobile{
+        width: 60px;
+        height: 60px;
+        margin-top: 30px;
+        float: left;
+        margin-right: 10px;
+        margin-left: 20px;
+    }
+
+    #btn_baixar{
+        width: 180px;
+        height: 50px;
+        float: right;
+        margin-top: 35px;
+        margin-right: 30px;
+        background-color: rgba(105, 196, 0,0.6);
+        text-align: center;
+        color: white;
+        padding-top: 10px;
+        box-sizing: border-box;
+        cursor: pointer;
+    }
+
+    #btn_baixar:hover{
+        transform: scale(1.05);
+    }
+}
+
+@media screen and (max-device-width:1369px) and (min-device-width:1200px){
+    
+    .desktop,#menu_mobile,.display_none{
+        display: none;
+    }
+    
+    #logo{
+        width: 150px;
+        height: 50px;
+    /*    background-color: white;*/
+        float: left;
+        margin-top: 10px;
+        margin-left: 5px;
+        margin-right: 50px;
+    }
+
+    nav{
+        min-width: 300px;
+        width: auto;
+        height: 35px;
+        float: left;
+        margin-top: 25px;
+    }
+    /* Menu Principal */
+    #menu{
+        width: inherit;
+        height: inherit;
+    }
+    
+    .notebook {
+	    width: 70px;
+        max-width: 70px;
+    }
+    
+    .submenu_notebook{
+        width: 150px;
+        min-height: 50px;
+        height: auto;
+        background-color:#730202;
+        box-sizing: border-box;
+        display: none;
+        overflow: hidden;
+        padding: 10px;
+        margin-left: -50px;
+    }
+
+    .menu_itens, .menu_not_itens{
+        min-width: 70px;
+        width: auto;
+        height: inherit;
+        text-align: center;
+        float: left;
+        padding-top: 9px;
+        padding-left: 10px;
+        padding-right: 10px;
+        color: white;
+        border-right: solid 1px white;
+        box-sizing: border-box;
+        position: relative;
+        font-family: 'Nunito',sans-serif;
+        font-size: 14px;
+    }
+    
+    #caixa_redes_sociais{
+        width: 50px;
+        min-height: 50px;
+        height: auto;
+        margin-top: 34%;
+        margin-right: -450px;
+        float: right;
+        position: relative;
+        z-index: 999;
+    }
+
+    
+    .menu_not_itens:hover > .submenu_notebook {
+        transition: 1s;
+        margin-top: 10px;
+	    display: block;
+    }
+
+    /*menu Principal: efeito borda ao selecionar(Hover)*/
+    header nav #menu .menu_itens::after{
+        content: '';
+        float: left;    
+        display: inline-block;
+        height: 5px;
+        width: 100%;
+        border-bottom: 2px solid #BF0404;
+        opacity: 0;
+        -webkit-transition: opacity 0.35s,-webkit-transform .35s;
+        transition: opacity 0.35s,transform .35s;
+        -webkit-transform: scale(0,1);
+        transform: scale(0,1);
+    }
+
+    header nav #menu .menu_itens:hover::after{
+        opacity:1;
+        -webkit-transform:scale(1);
+        transform:scale(1);
+    }
+
+
+    #login{
+        width: auto;;
+        min-height: 50px;
+        height: auto;
+        float: right;
+        margin-top: 10px;
+        margin-right: 10px;
+
+    }
+
+    .inserir{
+        width: 170px;
+        height: inherit;
+        float: left;
+        margin-right: 10px;
+    }
+
+    .txtinserir{
+        width: inherit;
+        height: 32px;
+        font-size: 15px;
+    }
+
+    #botao{
+        width: 35px;
+        height: 35px;
+        margin-top: 20px;
+        float: left;
+        border-radius: 25%;
+    }
+
+    #botao_ok{
+        width: inherit;
+        height: inherit;
+        border-radius: 25%;
+        background-color: #69C400;
+        border: 0px;
+    }
+
+    #botao_ok:active{
+        box-shadow: 3px 3px 5px black;
+        color: white;
+    }
+
+    /* Rede Sociais */
+    
+
+    .rede_social{
+        width: inherit;
+        height: 50px;
+    }
+
+    .rede_social:hover{
+        border-radius: 50%;
+        box-shadow: 2px 2px 10px black;
+        cursor: pointer;
+    }
+
+    /*Rodapé*/
+    footer{
+        width: 100%;
+        height: 100px;
+        background-color: #260306;
+        clear: both;
+    }
+
+    #caixa_sistema{
+        width: 200px;
+        height: inherit;
+        float: left;
+    }
+
+    #sistema_interno{
+        width: 180px;
+        height: 50px;
+        float: right;
+        margin-top: 35px;
+        text-align: center;
+        padding-top: 10px;
+        box-sizing: border-box;
+        background-color: rgba(105, 196, 0,0.6);
+        color: white;
+        cursor: pointer;    
+    }
+
+    #sistema_interno:hover{
+        transform: scale(1.05);
+    }
+
+    #caixa_info{
+        width: 600px;
+        height: inherit;
+        float: left;
+        margin-left: 100px;
+        padding-top: 65px;
+        box-sizing: border-box;
+    }
+
+    .texto{
+        text-align: center;
+        font-size: 18px;
+        padding: 0px;
+        color: white;
+    }
+
+    #caixa_mobile{
+        width: 300px;
+        height: inherit;
+        float: right;
+    }
+
+
+    #img_mobile{
+        width: 60px;
+        height: 60px;
+        margin-top: 30px;
+        float: left;
+        margin-right: 10px;
+        margin-left: 20px;
+    }
+
+    #btn_baixar{
+        width: 180px;
+        height: 50px;
+        float: right;
+        margin-top: 35px;
+        margin-right: 30px;
+        background-color: rgba(105, 196, 0,0.6);
+        text-align: center;
+        color: white;
+        padding-top: 10px;
+        box-sizing: border-box;
+        cursor: pointer;
+    }
+
+    #btn_baixar:hover{
+        transform: scale(1.05);
+    }
+}
+
+/*Responsivo mobile*/
+@media screen and (max-device-width:1199px){
+   
+    header{
+        position: fixed;
+    }
+    .desktop,.notebook,#menu,#login{
+        display: none;
+    }
+    
+    #logo{
+        width: auto;
+        max-width: 150px;
+        height: 50px;
+        margin-top: 10px;
+    }
+
+    nav{
+        width: 30vw;
+        height: 50px;
+        float: left;
+        margin-top: 10px;
+    }
+    /* Menu Principal */
+    #menu_mobile{
+        width: 50px;
+        height: 50px;
+        margin-top: -60px;
+    }
+    
+    .menu_itens {
+	   width: 50px;
+        height: 50px;
+    }
+    
+    .submenu_itens{
+        width: inherit;
+        height: 50px;
+        text-align: center;
+        padding-top: 9px;
+        padding-left: 10px;
+        padding-right: 10px;
+        color: white;
+        border-right: solid 1px white;
+        box-sizing: border-box;
+        position: relative;
+        font-family: 'Nunito',sans-serif;
+        font-size: 14px;
+    }
+    
+    #submenu_mobile{
+        width: 100vw;
+        min-height: 0px;
+        max-height: 83vh;
+        height: auto;
+        margin-left: -2vw;
+        background-color: rgba(0,0,0,0.7);
+        visibility: hidden;
+        opacity: 0;
+        margin-top: -100vh;
+        overflow: auto;
+    }
+    
+    .menu_itens:hover > #submenu_mobile{
+        margin-top: 0px;
+        visibility: visible;
+        opacity: 1;
+        transition: all 1s;
+    }   
+
+    /*menu Principal: efeito borda ao selecionar(Hover)*/
+    header nav #menu_mobile .menu_itens #submenu_mobile .submenu_itens::after{
+        content: '';
+        float: left;    
+        display: inline-block;
+        height: 5px;
+        width: 100%;
+        border-bottom: 2px solid #BF0404;
+        opacity: 0;
+        -webkit-transition: opacity 0.35s,-webkit-transform .35s;
+        transition: opacity 0.35s,transform .35s;
+        -webkit-transform: scale(0,1);
+        transform: scale(0,1);
+    }
+
+    header nav #menu_mobile .menu_itens #submenu_mobile .submenu_itens:hover::after{
+        opacity:1;
+        -webkit-transform:scale(1);
+        transform:scale(1);
+    }
+
+    /* Rede Sociais */
+    #caixa_redes_sociais{
+       width: 50px;
+        height: auto;
+        min-height: 50px;
+        float: right;
+        margin: 2%;
+    }
+
+    .rede_social{
+        width: inherit;
+        height: 50px;
+    }
+
+    .rede_social:hover{
+        border-radius: 50%;
+        box-shadow: 2px 2px 10px black;
+        cursor: pointer;
+    }
+
+    /*Rodapé*/
+    footer{
+        width: 100vw;
+        min-height:100px;
+        height: auto;
+        background-color: #260306;
+        clear: both;
+        overflow: hidden;
+        padding-bottom: 20px;
+    }
+
+    #caixa_sistema,#caixa_info, #caixa_mobile{
+        display: none;
+    }
+    
+    .display_none_mobile{
+        display: none;
+    }
+    
+}

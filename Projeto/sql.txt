@@ -1,0 +1,11 @@
+select tblcategoria.*,categoria_subcategoria.*, tblsubcategoria.* from tblcategoria
+        inner join categoria_subcategoria on tblcategoria.id_categoria = categoria_subcategoria.id_categoria inner join tblsubcategoria on categoria_subcategoria.id_subcategoria = tblsubcategoria.id_subcategoria where tblcategoria.id_categoria = 8;
+        
+        select categoria_subcategoria.*, tblsubcategoria.* from categoria_subcategoria inner join tblsubcategoria
+        on categoria_subcategoria.id_subcategoria = tblsubcategoria.id_subcategoria where categoria_subcategoria.id_categoria = 8;
+        
+        select * from categoria_subcategoria;
+        
+        delete from tblcategoria where id_categoria = 10;
+        
+		update tblcategoria set nome_categoria = 'll' where id_categoria = 13;
