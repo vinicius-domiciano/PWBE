@@ -1,0 +1,2675 @@
+
+/*css desktop*/
+@media screen and (min-device-width:1370px){
+    /*Estilização do site*/
+
+    /*Sombra*/
+    .sombra{
+        box-shadow: 0px 0px 5px gray;
+    }
+    /*Botão*/
+    .btn_detalhes{
+        width: 120px;
+        height: 35px;
+        float: right;
+        margin-right: 20px;
+        background-color: white;
+        border: 0px;
+        box-shadow: 0px 0px 5px gray;
+        font-size: 18px;
+        cursor: pointer;
+        text-align: center;
+        padding-top: 7px;
+        box-sizing: border-box;
+        transform: scale(0.9);
+        margin: 5%;
+    }
+
+    .btn_detalhes:hover{
+        transform: scale(1);
+    }
+
+    .detalhes{
+        text-align: right;
+        padding-right: 20px;
+    }
+
+    /**//* Pagina Home *//**/
+
+    /*Slider*/
+    #slider{
+        width: 100%;
+        height: 510px;
+        padding-top: 70px;
+        z-index: 1;
+    }
+    
+    .mySlides img {
+    vertical-align: middle;
+    width: 100%;
+    height: 510px;
+}
+
+    /*Conteudos*/
+    #area_itens{
+        width: 100%;
+        min-height: 760px;
+        height: auto;
+        z-index: 1;
+    }
+    /*Menu secundario*/
+    #menu_secundario {
+        width: 200px;
+        float: left;
+        text-align: center;
+        background-color: white;
+        box-sizing: border-box;
+    }
+
+    #caixa_menu_secundario, .submenu_secundario{
+        width: 100%;
+        min-height: 50px;
+    }
+
+    .menu_secundario_itens, .submenu_secundario_itens{
+        width: inherit;
+        height: 50px;
+        background-color: #728C11;
+        color: white;
+        padding-top: 15px;
+        box-sizing: border-box;
+        margin-bottom: 1px;
+    }
+    
+    .submenu_secundario {
+        margin-left: 202px;
+        position: relative;
+        margin-top: -34px;
+        opacity: 0;
+        visibility: hidden;
+        background-color: white;
+    }
+    
+    .submenu_secundario_itens:hover::after{
+        content: '';
+        width: 1px;
+        float: right;
+        height: inherit;
+        border-right: solid 5px brown;
+        margin-top: -15px;
+    }
+
+    .menu_secundario_itens:hover{
+        box-shadow: 2px 2px 5px darkgray;
+        background-color: brown;
+    }
+    
+    .menu_secundario_itens:hover > .submenu_secundario {
+        opacity: 1;
+        visibility: visible;
+    }
+    /*Caixa de pesquisa*/
+    .caixa_search{
+        width: 334px;
+        height: 32px;
+        border-radius: 16.5px;
+        border: 1px solid darkgray;
+        float: right;
+        margin-right: 12%;
+        margin-top: 20px;
+    }
+    
+    .txt_search{
+        width: 300px;
+        height: 30px;
+        float: left;
+        border: 0px;
+        border-radius: 15px;
+        font-size: 17px;
+        margin: 1px;
+        padding-left: 15px;
+        padding-right: 10px;
+        box-sizing: border-box;
+    }
+    
+    #bnt_search{
+        width: 30px;
+        height: 30px;
+        float: left;
+        border: 0px;
+        border-radius: 50%;
+        margin:1px;
+        background-color: #730202;
+        background-image: url(../icones/lupa.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        cursor: pointer;
+    }
+    
+    #btn_search:active{
+        transform: scale(0.9);
+    }
+    
+    
+    /* conteudo itens */
+    #itens{
+        width: 1100px;
+        min-height: 740px;
+        height: auto;
+        float: left;
+        padding-top: 100px;
+        padding-right: 100px;
+        box-sizing: border-box;
+        background-color: white;
+    }
+
+    .caixa_conteudo{
+        width: 310px;
+        height: 350px;
+        float: left;
+        margin-bottom: 20px;
+        margin-left: 20px;
+        border: solid 1px black;
+    /*    border-radius: 10%;*/
+    }
+
+    .caixa_conteudo:hover, .caixa_conteudo2:hover{
+        box-shadow: 0px 0px 10px gray;
+    }
+
+    .caixa_img{
+        width: 150px;
+        height: 150px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .info_basicas{
+        width: 100%;
+        padding-bottom: 10px;
+        padding-left: 10px;
+        box-sizing: border-box;
+        overflow: hidden;
+        max-height: 33px;
+    }
+    
+    .span {
+	   font-size: 17px;
+    }
+    
+    .risco{
+        text-decoration: line-through;
+        margin-right: 20px;
+    }
+
+
+    /**//* Pagina Promção *//**/
+
+    /*titulo da pagina*/
+    #inicio{
+        width: 100%;
+        height: 400px;
+        background-image: url(../img/bg_ppromocao.jpg);
+        padding-top: 70px;
+    }
+
+    #caixa_promocao_titulo{
+        width: 500px;
+        height: 80px;
+    }
+
+    /* conteudo */
+    .produtos_promocoes{
+        width: 100%;
+        min-height: 630px;
+        height: auto;
+        padding-top: 25px;
+        box-sizing: border-box;
+        padding-bottom: 25px;
+    }
+
+    .caixa_produto{
+        width: 400px;
+        height: 659px;
+        float: left;
+        margin-left: 16px;
+        margin-right: 16px;
+        margin-bottom: 10px;
+        overflow: hidden;
+    }
+    
+    .caixa_produto .btn_detalhes{
+	   width: 90%;
+    }
+
+    .img_produto{
+        width: inherit;
+        height: auto;
+        max-height: 70%;
+    }
+
+    .info_produto{
+        width: inherit;
+        height: 30%;
+        padding-left: 20px;
+        padding-right: 10px;
+        box-sizing: border-box;
+    }
+
+    .info_produto h3{
+        text-align: center;
+        padding-top: 10px;
+        padding-right: 10px;
+        padding-bottom: 30px;
+    }
+
+    .text_info{
+        width: 100%;
+        min-height: 40px;
+        height: auto;
+    }
+
+    .text_info p, .text_validade p{
+        padding-bottom: 10px;
+        padding-left: 0px;
+    }
+
+    .text_validade{
+        width: 100%;
+        min-height: 20px;
+        height: auto;
+        margin-top: 50px;
+    }
+
+    .info_produto .btn_detalhes{
+        width: 120px;
+        margin-top: -25px;
+        border: 0px;
+        cursor: pointer;
+        background-color: white;
+        padding-top: 0px;
+    }
+
+
+    /**//*Pagina Produtos do mês*//**/
+
+    .bg{
+        background-image: url(../img/bg_pmes.jpg);
+    }
+    /* Titulo da pagina */
+    #titulo_site{
+        width: 100%;
+        height: 400px;
+        padding-top: 70px;
+    }
+
+    #titulo{
+        width: inherit;
+        height: inherit;
+        padding-top: 70px;
+        box-sizing: border-box;
+    }
+
+    /* conteudos seções */
+    .mes_conteudo{
+        width: 100%;
+        height: auto;
+        min-height:500px;
+        overflow: hidden;
+        box-shadow: 1px 1px 2px;
+    }
+
+    #fundo{
+        width: inherit;
+        height: inherit;
+        background-color: rgba(0,0,0,0.5);
+    }
+
+    .mes_conteudo h2{
+        text-align: center;
+    }
+
+    .produto_img{
+        width: 400px;
+        height: 350px;
+        margin-left: 50px;
+        float: left;
+    }
+
+    .informacoes{
+        width: 700px;
+        min-height: 50px;
+        height: auto;
+        float: left;
+        padding-left: 10px;
+        box-sizing: border-box;
+    }
+
+    .informacoes p,.segunda_info p{
+        padding-top: 10px;
+        padding-bottom: 10px;
+        box-sizing: border-box;
+    }
+
+    .segunda_info p{
+        color: white;
+    }
+
+    .info_qtd{
+        float: left;
+        margin-top: 180px;
+        min-height: 50px;
+        height: auto;
+    }
+
+    .mes_conteudo .btn_detalhes{
+	   width: 150px;
+    }
+
+    /**//*Nossas Lojas*//**/
+
+    /* mudar cor conforme a linha */
+    .cor_um{
+        background-color: white;
+    }
+
+    .cor_dois{
+        background-color: darkgray;
+    }
+    /* reajusta a tag p */
+    p{
+        padding-left: 20px;
+    }
+
+    /* seção:nossas lojas */
+    #nossa_lojas{
+        width: 100%;
+        height: 800px;
+        padding-top: 70px;
+    }
+
+    /* titulo */
+    #caixa_titulo{
+        width: inherit;
+        height: 100px;
+    }
+
+    #titulo{
+        padding-top: 20px;
+        padding-left: 30px;
+    }
+
+    /* conteudo da pagina */
+    #conteudo_nossas_lojas{
+        width: inherit;
+        min-height: 250px;
+        height: auto;
+    }
+
+    table{
+        width: inherit;
+        min-height: inherit;
+        height:auto;
+    }
+
+    table, th, td {
+      border: 1px solid black;
+      border-collapse: collapse;
+    }
+
+    th{
+        background-color: gray;
+        color: white;
+    }
+
+    #th_endereco, .endereco{
+        width: 70%;
+        height: 50px;
+    }
+
+    #th_tel, .tel{
+        width: 30%;
+        height: 70px;
+    }
+
+    tr{
+        width: inherit;
+        height: 100px;
+    }
+
+    .endereco, .tel{
+        height: inherit;
+        color: black;
+    }
+
+
+    /**//*Curiosidades*//**/
+
+    ol li{
+        list-style: circle;
+        font-size: 20px;
+    }
+
+    .txt{
+        font-size: 20px;
+        text-align: center;
+    }
+
+    /* Titulo da pagina */
+    #curiosidades_titulo{
+        width: 100%;
+        height: 400px;
+        padding-top: 70px;
+        background-image: url(../img/bg_curiosidades.jpg)
+    }
+
+    #subcaixa{
+        width: inherit;
+        height: inherit;
+        background-color: rgba(0,0,0,0.5);
+    }
+
+    /* nossos produtos */
+    #nossos_produtos{
+        width: 100%;
+        height: 520px;
+        box-sizing: border-box;
+        margin-bottom: 50px;
+    }
+
+    .texto_1{
+        margin-top: 10px;
+        width: 600px;
+        height: 400px;
+        padding-left: 10px;
+        box-sizing: border-box;
+        float: left;
+
+    }
+
+    /*seção beneficios*/
+    .beneficios{
+        width: inherit;
+        min-height: 120px;
+        overflow: hidden;
+        height: auto;
+        box-sizing: border-box;
+        margin-top: 20px;
+        margin-bottom: 50px;
+    }
+
+    .beneficios_img{
+        width: 300px;
+        height: 300px;
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-top: 30px;
+        float: left;
+    }
+
+    .caixa_texto{
+        width: 350px;
+        min-height: 50px;
+        height: auto;
+        overflow: hidden;
+        margin-right: 20px;
+        float: left;
+        padding-left: 20px;
+        box-sizing: border-box;
+
+    }
+
+    /*seção sucos da empresa*/
+    .sucos_empresa{
+        width: 100%;
+        min-height: 200px;
+        height: auto;
+        clear: both;
+        margin-bottom: 50px;
+        overflow: hidden;
+    }
+
+    .fundo_escuro{
+        width: inherit;
+        min-height: inherit;
+        height: auto;
+        color: white;
+        background-color: rgba(0,0,0,0.5);
+        overflow: hidden;
+        padding-top: 10px;
+        padding-bottom: 50px;
+        box-sizing: border-box;
+    }
+
+    .sucos_empresa h2, .sucos_empresa p{
+        color: white;
+    }
+    .texto_sucos_empresa, .inverso_img , .simples_img{
+        width: 450px;
+        height: 450px;
+        margin-left: 20px;
+        margin-top: 10px;
+        margin-right: 50px;
+        float: left;
+
+    }
+
+    /*seção dica*/
+    .dica{
+        width: 100%;
+        min-height:50px;
+        height: auto;
+        margin-bottom: 50px;
+    }
+
+    .caixa_dica{
+        width: 50%;
+        height: inherit;
+        margin-left: 20px;
+        overflow: hidden;
+    }
+
+
+    /**//*Sobre a Empresa*//**/
+
+    /*titulo pagina*/
+    #titulo_pg{
+        width: 100%;
+        height: 500px;
+        padding-top: 70px;
+        background-image: url(../img/bg_sobre.jpg);
+    }
+
+    #fundo{
+        width: inherit;
+        height: inherit;
+        background-color: rgba(0,0,0,0.5);
+    }
+
+    #fundo h1{
+        padding-top: 150px;
+        box-sizing: border-box;
+    }
+
+    /*SEÇÃO Porque*/
+    .porque{
+        width: 100%;
+        min-height: 400px;
+    }
+
+    .porque_texto, .porque_img{
+        width: 500px;
+        min-height: 400px;
+        height: auto;
+        margin-left: 20px;
+        margin-right: 150px;
+        float: left;
+    }
+
+
+    .porque_texto {
+        clear: both;
+    }
+
+    /*Seção missao visão e valores*/
+    #m_vi_va{
+        width: 100%;
+        min-height: 550px;
+        height: auto;
+        background-image: url(../img/bg_sobre2.jpg);
+        overflow: hidden;
+        padding-bottom: 50px;
+        box-sizing: border-box;
+    }
+
+    #m_vi_va h2, #m_vi_va p{
+        color: white;
+    }
+
+    .sobre_conteudo{
+        width: 350px;
+        height: 350px;
+        float: left;
+        margin-left: 40px;
+        margin-right: 40px;
+        background-color: rgba(0,0,0,0.5);
+        margin-top: 50px;
+        text-align: center;
+        box-shadow: 3px 3px 10px white;
+    }
+
+    .sobre_conteudo p{
+        font-size: 25px;
+        padding-top: 50px;
+    }
+
+    /* siga nos e parceiros */
+    #siga_nos_parceiros{
+        width: 100%;
+        min-height:400px;
+        height: auto;
+        overflow: hidden;
+        padding-bottom: 50px;
+        box-sizing: border-box;
+
+    }
+
+    .siga_parceiro{
+        width: 50%;
+        height: inherit;
+        float: left;
+    }
+
+    .siga_parceiro_img{
+        width: 128px;
+        height: 128px;
+        margin-left: 20px;
+        margin-right: 30px;
+        margin-bottom: 20px;
+        float: left;
+        cursor: pointer;
+    }
+
+
+    /**//* Contate Nos*//**/
+
+    #contate{
+        width: 100%;
+        min-height: 500px;
+        height: auto;
+        padding-top: 70px;
+    }
+
+    #contate .txt{
+        text-align: left;
+        padding-top: 10px;
+    }
+    /*titulo pagina*/
+    #titulo_contate{
+        width: inherit;
+        height: 150px;
+    }
+
+    /*Formulario*/
+    .caixa_inserir, #caixa_mensagem, #caixa_button{
+        width: inherit;
+        height: 100px;
+        border: solid 1px black;
+        border-bottom: 0px;
+        font-size: 18px;
+    }
+
+    #caixa_mensagem{
+        height: 390px;
+    }
+
+    #caixa_button{
+        height: 200px;
+    }
+
+    .input_inserir{
+        width: 540px;
+        height: 30px;
+        font-size: 18px;
+        margin-left: 20px;
+    }
+
+    .col{
+        width: 50%;
+        height: inherit;
+        float: left;
+        border-right: 1px solid;
+        box-sizing: border-box;
+    }
+
+    .input_rdo{
+        width: 20px;
+        height: 20px;
+        margin-left: 20px;
+    }
+
+    textarea{
+        width: 70%;
+        height: 300px;
+        margin-left: 20px;
+        resize: none;
+    }
+
+    .input_btn, .input_btn_limpar{
+        width: 120px;
+        height: 50px;
+        font-size: 18px;
+        margin-left: 20px;
+        margin-top: 70px;
+        border: 1px solid black;
+        background-color: white;
+        cursor: pointer;
+    }
+
+    .input_btn_limpar{
+        float: right;
+        margin-right: 20px;
+        text-align: center;
+        padding-top: 12px;
+        box-sizing: border-box;
+    }
+
+    .input_btn_limpar a{
+        color: black;
+    }
+
+    .input_btn:hover, .input_btn_limpar:hover{
+        transform: scale(1.1);
+    }
+
+    /*Exibir banco*/
+    .section{
+        width: 100%;
+        min-height: 50px;
+        height: auto;
+        overflow: hidden;
+        clear: both;
+    }
+
+    .inherit{
+        width: 100%;
+        min-height: 10px;
+        overflow: hidden;
+        padding-top: 10px;
+        padding-bottom: 50px;
+        box-sizing: border-box;
+    }
+    
+    #container_modal{
+    width: 100%;
+    height: 100%;
+	}
+    
+    .imagem_modal{
+        width: 30%;
+        height: 50vh;
+        max-height: 60%;
+        float: left;
+    }
+
+    .caixa_dados{
+        width: 70%;
+        height: 70vh;
+        max-height: 100%;
+        padding: 1vh;
+        box-sizing: border-box;
+        float: right;
+        overflow: auto;
+    }
+
+    .modal_dados{
+        width: 100%;
+        min-height: 50px;
+        margin-bottom: 1%;
+    }
+
+    .caixa_catsub {
+        width: 35%;
+        height: 50px;
+        text-align: center;
+        font-size: 20px;
+        line-height: 50px;
+        box-shadow: 0px 0px 5px #919191;
+        margin: 1%;
+        border-radius: 25px;
+    }
+
+    .caixa_compra{
+        width: 30%;
+        height: 35vh;
+        max-height: 30%;
+        box-sizing: border-box;
+        float: left;
+    }
+
+    .compra_itens{
+        width: 100%;
+        margin-top: 5vh;
+        margin-left: 30%;
+    }
+
+    .caixa_qtd{
+        width: 100%;
+        height: 50px;
+        box-sizing: border-box;
+    }
+
+    .caixa_qtd p {
+        width: 50px;
+        height: 50px;
+        font-size: 25px;
+        text-align: center;
+        border: solid 1px #919191;
+        padding: 0px;
+        font-weight: bold;
+        line-height: 50px;
+        border-radius: 50%;
+        float: left;
+        cursor: pointer;
+    }
+
+    .caixa_qtd div{
+        width: 70px;
+        height: 50px;
+        font-size: 20px;
+        float: left;
+        margin: 0px 20px 0px 20px;
+        border: solid 1px #919191;
+        text-align: center;
+        line-height: 50px;
+    }
+
+    .caixa_qtd p:active{
+        transform: scale(0.8);
+    }
+
+    .caixa_qtd p:hover{
+        box-shadow: 2px 3px 3px #a1a1a1;
+    }
+
+    .modal_dados .btn_detalhes{
+    	width:70%;
+        float: left;
+        margin: 0px;
+    }
+}
+
+
+/*css notebook*/
+@media screen and (max-device-width:1369px) and (min-device-width:1200px){
+    /*Estilização do site*/
+    /*Sombra*/
+    .sombra{
+        box-shadow: 0px 0px 5px gray;
+    }
+    /*Botão*/
+    .btn_detalhes{
+        width: 100px;
+        height: 35px;
+        float: right;
+        background-color: white;
+        border: 0px;
+        box-shadow: 0px 0px 3px #919191;
+        font-size: 18px;
+        cursor: pointer;
+        text-align: center;
+        padding-top: 7px;
+        box-sizing: border-box;
+        transform: scale(0.9);
+        margin: 5%;
+    }
+
+    .btn_detalhes:hover{
+        transform: scale(1);
+    }
+
+    .detalhes{
+        text-align: right;
+        padding-right: 20px;
+    }
+
+    /**//* Pagina Home *//**/
+
+    /*Slider*/
+    #slider{
+        width: 100%;
+        height: 400px;
+        padding-top: 70px;
+        z-index: 1;
+    }
+    
+    .mySlides img {
+    vertical-align: middle;
+    width: 100%;
+    height: 400px;
+}
+
+    /*Conteudos*/
+    #area_itens{
+        width: 100%;
+        min-height: 760px;
+        height: auto;
+        z-index: 1;
+    }
+    /*Menu secundario*/
+    #menu_secundario {
+        width: 200px;
+        float: left;
+        text-align: center;
+        background-color: white;
+        box-sizing: border-box;
+    }
+
+    #caixa_menu_secundario, .submenu_secundario{
+        width: 100%;
+        min-height: 50px;
+    }
+
+    .menu_secundario_itens, .submenu_secundario_itens{
+        width: inherit;
+        height: 50px;
+        background-color: #728C11;
+        color: white;
+        padding-top: 15px;
+        box-sizing: border-box;
+        margin-bottom: 1px;
+    }
+    
+    .submenu_secundario {
+        margin-left: 202px;
+        position: relative;
+        margin-top: -35px;
+        opacity: 0;
+        visibility: hidden;
+        background-color: white;
+    }
+    
+    .submenu_secundario_itens:hover::after{
+        content: '';
+        width: 1px;
+        float: right;
+        height: inherit;
+        border-right: solid 5px brown;
+        margin-top: -15px;
+    }
+
+    .menu_secundario_itens:hover{
+        box-shadow: 2px 2px 5px darkgray;
+        background-color: brown;
+    }
+    
+    .menu_secundario_itens:hover > .submenu_secundario {
+        opacity: 1;
+        visibility: visible;
+    }
+    
+    /*Caixa de pesquisa*/
+    .caixa_search{
+        width: 334px;
+        height: 32px;
+        border-radius: 16.5px;
+        border: 1px solid darkgray;
+        float: right;
+        margin-right: 12%;
+        margin-top: 20px;
+        overflow: hidden;
+    }
+    
+    .txt_search{
+        width: 300px;
+        height: 30px;
+        border-radius: 15px;
+        float: left;
+        border: 0px;
+        font-size: 17px;
+        margin: 1px;
+        padding-left: 15px;
+        padding-right: 10px;
+        box-sizing: border-box;
+    }
+    
+    #bnt_search{
+        width: 30px;
+        height: 30px;
+        float: left;
+        border: 0px;
+        margin:1px;
+        border-radius: 50%;
+        background-color: #730202;
+        background-image: url(../icones/lupa.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        cursor: pointer;
+    }
+    
+    #btn_search:active{
+        transform: scale(0.9);
+    }
+
+    /* conteudo itens */
+    #itens{
+        width: 1000px;
+        min-height: 740px;
+        height: auto;
+        float: left;
+        padding-top: 100px;
+        padding-right: 50px;
+        box-sizing: border-box;
+        background-color: white;
+    }
+
+    .caixa_conteudo{
+        width: 300px;
+        height: 340px;
+        float: left;
+        margin-bottom: 20px;
+        margin-left: 10px;
+        border: solid 1px black;
+    /*    border-radius: 10%;*/
+    }
+
+    .caixa_conteudo:hover, .caixa_conteudo2:hover{
+        box-shadow: 0px 0px 10px gray;
+    }
+
+    .caixa_img{
+        width: 150px;
+        height: 150px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .info_basicas{
+        width: 100%;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        box-sizing: border-box;
+        overflow: hidden;
+        max-height: 33px;
+    }
+    
+    .span {
+	   font-size: 17px;
+    }
+
+    .risco {
+	   text-decoration: line-through;
+    }
+
+
+
+    /**//* Pagina Promção *//**/
+
+    /*titulo da pagina*/
+    #inicio{
+        width: 100%;
+        height: 400px;
+        background-image: url(../img/bg_ppromocao.jpg);
+        padding-top: 70px;
+    }
+
+    #caixa_promocao_titulo{
+        width: 500px;
+        height: 80px;
+    }
+
+    /* conteudo */
+    .produtos_promocoes{
+        width: 100%;
+        min-height: 630px;
+        height: auto;
+        padding-top: 25px;
+        box-sizing: border-box;
+        padding-bottom: 25px;
+    }
+
+    .caixa_produto{
+        width: 360px;
+        height: 659px;
+        float: left;
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-bottom: 30px;
+    }
+
+    .img_produto{
+        width: inherit;
+        height: 50%;
+    }
+
+    .info_produto{
+        width: 100%;
+        min-height: 30%;
+        padding-left: 20px;
+        padding-right: 10px;
+        box-sizing: border-box;
+    }
+
+    .info_produto h3{
+        text-align: center;
+        padding-top: 10px;
+        padding-right: 10px;
+        padding-bottom: 30px;
+    }
+
+    .text_info{
+        width: 100%;
+        min-height: 40px;
+        height: auto;
+    }
+
+    .text_info p, .text_validade p{
+        padding-bottom: 2%;
+        padding-left: 0px;
+    }
+
+    .text_validade{
+        width: 100%;
+        min-height: 20px;
+        height: auto;
+        margin-top: 50px;
+    }
+
+
+    /**//*Pagina Produtos do mês*//**/
+
+    .bg{
+        background-image: url(../img/bg_pmes.jpg);
+    }
+    /* Titulo da pagina */
+    #titulo_site{
+        width: 100%;
+        height: 400px;
+        padding-top: 70px;
+    }
+
+    #titulo{
+        width: inherit;
+        height: inherit;
+        padding-top: 70px;
+        box-sizing: border-box;
+    }
+
+    /* conteudos seções */
+    .mes_conteudo{
+        width: 100%;
+        min-height: 300px;
+        box-shadow: 1px 1px 2px;
+        overflow: hidden;
+    }
+
+    #fundo{
+        width: inherit;
+        height: inherit;
+        background-color: rgba(0,0,0,0.5);
+    }
+
+    .mes_conteudo h2{
+        text-align: center;
+    }
+
+    .segunda_categoria{
+        color: white;
+    }
+
+    .produto_img{
+        width: 350px;
+        height: 350px;
+        margin-left: 50px;
+        float: left;
+    }
+
+    .informacoes{
+        width: 700px;
+        min-height: 50px;
+        height: auto;
+        float: left;
+        padding-left: 10px;
+        box-sizing: border-box;
+    }
+
+    .informacoes p,.segunda_info p{
+        padding-top: 10px;
+        padding-bottom: 10px;
+        box-sizing: border-box;
+    }
+
+    .segunda_info p{
+        color: white;
+    }
+
+    .info_qtd{
+        float: left;
+        margin-top: 180px;
+        min-height: 50px;
+        height: auto;
+    }
+
+    /**//*Nossas Lojas*//**/
+
+    /* mudar cor conforme a linha */
+    .cor_um{
+        background-color: white;
+    }
+
+    .cor_dois{
+        background-color: darkgray;
+    }
+    /* reajusta a tag p */
+    p{
+        padding-left: 20px;
+    }
+
+    /* seção:nossas lojas */
+    #nossa_lojas{
+        width: 100%;
+        height: 800px;
+        padding-top: 70px;
+    }
+
+    /* titulo */
+    #caixa_titulo{
+        width: inherit;
+        height: 100px;
+    }
+
+    #titulo{
+        padding-top: 20px;
+        padding-left: 30px;
+    }
+
+    /* conteudo da pagina */
+    #conteudo_nossas_lojas{
+        width: inherit;
+        min-height: 250px;
+        height: auto;
+    }
+
+    table{
+        width: inherit;
+        min-height: inherit;
+        height:auto;
+    }
+
+    table, th, td {
+      border: 1px solid black;
+      border-collapse: collapse;
+    }
+
+    th{
+        background-color: gray;
+        color: white;
+    }
+
+    #th_endereco, .endereco{
+        width: 70%;
+        height: 50px;
+    }
+
+    #th_tel, .tel{
+        width: 30%;
+        height: 70px;
+    }
+
+    tr{
+        width: inherit;
+        height: 100px;
+    }
+
+    .endereco, .tel{
+        height: inherit;
+        color: black;
+    }
+
+
+    /**//*Curiosidades*//**/
+
+    ol li{
+        list-style: circle;
+        font-size: 20px;
+    }
+
+    .txt{
+        font-size: 20px;
+        text-align: center;
+    }
+
+    /* Titulo da pagina */
+    #curiosidades_titulo{
+        width: 100%;
+        height: 400px;
+        padding-top: 70px;
+        background-image: url(../img/bg_curiosidades.jpg)
+    }
+
+    #subcaixa{
+        width: inherit;
+        height: inherit;
+        background-color: rgba(0,0,0,0.5);
+    }
+
+    /* nossos produtos */
+    #nossos_produtos{
+        width: 100%;
+        height: 520px;
+        box-sizing: border-box;
+        margin-bottom: 50px;
+    }
+
+    .texto_1{
+        margin-top: 10px;
+        width: 600px;
+        height: 400px;
+        padding-left: 10px;
+        box-sizing: border-box;
+        float: left;
+
+    }
+
+    /*seção beneficios*/
+    .beneficios{
+        width: inherit;
+        min-height: 120px;
+        overflow: hidden;
+        height: auto;
+    }
+
+    .beneficios_img{
+        width: 300px;
+        height: 300px;
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-top: 30px;
+        float: left;
+    }
+
+    .caixa_texto{
+        width: 350px;
+        min-height: 50px;
+        height: auto;
+        overflow: hidden;
+        margin-right: 20px;
+        float: left;
+        padding-left: 20px;
+        box-sizing: border-box;
+
+    }
+
+    /*seção sucos da empresa*/
+    .sucos_empresa{
+        width: 100%;
+        min-height: 200px;
+        height: auto;
+        clear: both;
+        margin-bottom: 50px;
+        overflow: hidden;
+    }
+
+    .fundo_escuro{
+        width: inherit;
+        min-height: inherit;
+        height: auto;
+        color: white;
+        background-color: rgba(0,0,0,0.5);
+        overflow: hidden;
+        padding-top: 10px;
+        padding-bottom: 50px;
+        box-sizing: border-box;
+    }
+
+    .sucos_empresa h2, .sucos_empresa p{
+        color: white;
+    }
+    .texto_sucos_empresa, .inverso_img , .simples_img{
+        width: 450px;
+        height: 450px;
+        margin-left: 20px;
+        margin-top: 10px;
+        margin-right: 50px;
+        float: left;
+
+    }
+
+    /*seção dica*/
+    .dica{
+        width: 100%;
+        min-height:50px;
+        height: auto;
+        margin-bottom: 50px;
+    }
+
+    .caixa_dica{
+        width: 50%;
+        height: inherit;
+        margin-left: 20px;
+        overflow: hidden;
+    }
+
+
+    /**//*Sobre a Empresa*//**/
+
+    /*titulo pagina*/
+    #titulo_pg{
+        width: 100%;
+        height: 500px;
+        padding-top: 70px;
+        background-image: url(../img/bg_sobre.jpg);
+    }
+
+    #fundo{
+        width: inherit;
+        height: inherit;
+        background-color: rgba(0,0,0,0.5);
+    }
+
+    #fundo h1{
+        padding-top: 150px;
+        box-sizing: border-box;
+    }
+
+    /*SEÇÃO Porque*/
+    .porque{
+        width: 100%;
+        min-height: 400px;
+    }
+
+    .porque_texto, .porque_img{
+        width: 500px;
+        min-height: 400px;
+        height: auto;
+        margin-left: 50px;
+        margin-right: 50px;
+        float: left;
+    }
+
+
+    .porque_texto {
+        clear: both;
+    }
+
+    /*Seção missao visão e valores*/
+    #m_vi_va{
+        width: 100%;
+        min-height: 550px;
+        height: auto;
+        background-image: url(../img/bg_sobre2.jpg);
+        overflow: hidden;
+        padding-bottom: 50px;
+        box-sizing: border-box;
+    }
+
+    #m_vi_va h2, #m_vi_va p{
+        color: white;
+    }
+
+    .sobre_conteudo{
+        width: 340px;
+        height: 350px;
+        float: left;
+        margin-left: 30px;
+        margin-right: 30px;
+        background-color: rgba(0,0,0,0.5);
+        margin-top: 50px;
+        text-align: center;
+        box-shadow: 3px 3px 10px white;
+    }
+
+    .sobre_conteudo p{
+        font-size: 25px;
+        padding-top: 50px;
+    }
+
+    /* siga nos e parceiros */
+    #siga_nos_parceiros{
+        width: 100%;
+        min-height:400px;
+        height: auto;
+        overflow: hidden;
+        padding-bottom: 50px;
+        box-sizing: border-box;
+
+    }
+
+    .siga_parceiro{
+        width: 50%;
+        height: inherit;
+        float: left;
+    }
+
+    .siga_parceiro_img{
+        width: 128px;
+        height: 128px;
+        margin-left: 20px;
+        margin-right: 30px;
+        margin-bottom: 20px;
+        float: left;
+        cursor: pointer;
+    }
+
+
+    /**//* Contate Nos*//**/
+
+    #contate{
+        width: 100%;
+        min-height: 500px;
+        height: auto;
+        padding-top: 70px;
+    }
+
+    #contate .txt{
+        text-align: left;
+        padding-top: 10px;
+    }
+    /*titulo pagina*/
+    #titulo_contate{
+        width: inherit;
+        height: 150px;
+    }
+
+    /*Formulario*/
+    .caixa_inserir, #caixa_mensagem, #caixa_button{
+        width: inherit;
+        height: 100px;
+        border: solid 1px black;
+        border-bottom: 0px;
+        font-size: 18px;
+    }
+
+    #caixa_mensagem{
+        height: 390px;
+    }
+
+    #caixa_button{
+        height: 200px;
+    }
+
+    .input_inserir{
+        width: 540px;
+        height: 30px;
+        font-size: 18px;
+        margin-left: 20px;
+    }
+
+    .col{
+        width: 50%;
+        height: inherit;
+        float: left;
+        border-right: 1px solid;
+        box-sizing: border-box;
+    }
+
+    .input_rdo{
+        width: 20px;
+        height: 20px;
+        margin-left: 20px;
+    }
+
+    textarea{
+        width: 70%;
+        height: 300px;
+        margin-left: 20px;
+        resize: none;
+    }
+
+    .input_btn, .input_btn_limpar{
+        width: 120px;
+        height: 50px;
+        font-size: 18px;
+        margin-left: 20px;
+        margin-top: 70px;
+        border: 1px solid black;
+        background-color: white;
+        cursor: pointer;
+    }
+
+    .input_btn_limpar{
+        float: right;
+        margin-right: 20px;
+        text-align: center;
+        padding-top: 12px;
+        box-sizing: border-box;
+    }
+
+    .input_btn_limpar a{
+        color: black;
+    }
+
+    .input_btn:hover, .input_btn_limpar:hover{
+        transform: scale(1.1);
+    }
+
+    /*Exibir banco*/
+    .section{
+        width: 100%;
+        min-height: 50px;
+        height: auto;
+        overflow: hidden;
+        clear: both;
+    }
+
+    .inherit{
+        width: 100%;
+        min-height: 100%;
+        overflow: hidden;
+        padding-top: 10px;
+        padding-bottom: 50px;
+        box-sizing: border-box;
+    }
+    
+    #container_modal{
+    width: 100%;
+    height: 100%;
+	}
+    
+    .imagem_modal{
+        width: 30%;
+        height: 50vh;
+        max-height: 60%;
+        float: left;
+    }
+
+    .caixa_dados{
+        width: 70%;
+        height: 70vh;
+        max-height: 100%;
+        padding: 1vh;
+        box-sizing: border-box;
+        float: right;
+        overflow: auto;
+    }
+
+    .modal_dados{
+        width: 100%;
+        min-height: 50px;
+        margin-bottom: 1%;
+    }
+
+    .caixa_catsub {
+        width: 35%;
+        height: 50px;
+        text-align: center;
+        font-size: 20px;
+        line-height: 50px;
+        box-shadow: 0px 0px 5px #919191;
+        margin: 1%;
+        border-radius: 25px;
+    }
+
+    .caixa_compra{
+        width: 30%;
+        height: 35vh;
+        max-height: 30%;
+        box-sizing: border-box;
+        float: left;
+    }
+
+    .compra_itens{
+        width: 100%;
+        margin-top: 5vh;
+        margin-left: 30%;
+    }
+
+    .caixa_qtd{
+        width: 100%;
+        height: 50px;
+        box-sizing: border-box;
+    }
+
+    .caixa_qtd p {
+        width: 50px;
+        height: 50px;
+        font-size: 25px;
+        text-align: center;
+        border: solid 1px #919191;
+        padding: 0px;
+        font-weight: bold;
+        line-height: 50px;
+        border-radius: 50%;
+        float: left;
+        cursor: pointer;
+    }
+
+    .caixa_qtd div{
+        width: 70px;
+        height: 50px;
+        font-size: 20px;
+        float: left;
+        margin: 0px 20px 0px 20px;
+        border: solid 1px #919191;
+        text-align: center;
+        line-height: 50px;
+    }
+
+    .caixa_qtd p:active{
+        transform: scale(0.8);
+    }
+
+    .caixa_qtd p:hover{
+        box-shadow: 2px 3px 3px #a1a1a1;
+    }
+
+    .modal_dados .btn_detalhes{
+    	width:70%;
+        float: left;
+        margin: 0px;
+    }
+}
+
+/*Responsivo Mobile*/
+@media screen and (max-device-width:1199px){
+    .center_mobile {
+	   margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .overflow_hidden{
+    overflow: hidden;
+    max-height: 33px;
+}
+    
+    /*Estilização do site*/
+    /*Sombra*/
+    .sombra{
+        box-shadow: 0px 0px 5px gray;
+    }
+    /*Botão*/
+    .btn_detalhes{
+        width: 90%;
+        height: 35px;
+        background-color: white;
+        border: 0px;
+        box-shadow: 0px 0px 5px gray;
+        font-size: 18px;
+        cursor: pointer;
+        text-align: center;
+        padding-top: 7px;
+        box-sizing: border-box;
+        transform: scale(0.9);
+        margin: 5%;
+        clear: both;
+    }
+
+    .btn_detalhes:hover{
+        transform: scale(1);
+    }
+
+    .detalhes{
+        text-align: right;
+        padding-right: 20px;
+    }
+
+    /**//* Pagina Home *//**/
+
+    /*Slider*/
+    #slider{
+        width: 100%;
+        height: 200px;
+        padding-top: 70px;
+        z-index: 1;
+    }
+    
+    .mySlides img {
+    vertical-align: middle;
+    width: 100%;
+    height: 200px;
+    }
+
+    /*Conteudos*/
+    #area_itens{
+        width: 100vw;
+        min-height: 0px;
+        height: auto;
+        z-index: 1;
+    }
+    /*Menu secundario*/
+    #menu_secundario{
+        width: 40%;
+        min-height: 50px;
+        height: auto;
+        text-align: center;
+        background-color: white;
+        box-sizing: border-box;
+        margin-top: 20px;
+        float: left;
+    }
+
+    #caixa_menu_secundario, .submenu_secundario{
+        width: 100%;
+        min-height: 50px;
+    }
+
+    .menu_secundario_itens, .submenu_secundario_itens{
+        width: 100%;
+        height: 50px;
+        background-color: #728C11;
+        color: white;
+        padding-top: 15px;
+        box-sizing: border-box;
+        margin-bottom: 1px;
+    }
+    
+    .submenu_secundario {
+        margin-left: 101%;
+        position: relative;
+        margin-top: -34px;
+        opacity: 0;
+        visibility: hidden;
+        background-color: white;
+    }
+    
+    .submenu_secundario_itens:hover::after{
+        content: '';
+        width: 1px;
+        float: right;
+        height: inherit;
+        border-right: solid 5px brown;
+        margin-top: -15px;
+    }
+
+    .menu_secundario_itens:hover{
+        box-shadow: 2px 2px 5px darkgray;
+        background-color: brown;
+    }
+    
+    .menu_secundario_itens:hover > .submenu_secundario {
+        opacity: 1;
+        visibility: visible;
+    }
+    
+    /*Caixa de pesquisa*/
+    .caixa_search{
+        width: 302px;
+        height: 32px;
+        border-radius: 16.5px;
+        border: 1px solid darkgray;
+        margin-top: 20px;
+    }
+    
+    .txt_search{
+        width: 268px;
+        height: 30px;
+        float: left;
+        border: 0px;
+        font-size: 17px;
+        margin: 1px;
+        border-radius: 15px;
+        padding-left: 15px;
+        padding-right: 10px;
+        box-sizing: border-box;
+    }
+    
+    #bnt_search{
+        width: 30px;
+        height: 30px;
+        float: right;
+        border: 0px;
+        border-radius: 100%;
+        margin:1px;
+        background-color: #730202;
+        background-image: url(../icones/lupa.png);
+        background-repeat: no-repeat;
+        background-size: 90%;
+        background-attachment: local;
+        background-position: center center;
+        cursor: pointer;
+    }
+    
+    #btn_search:active{
+        transform: scale(0.9);
+    }
+
+    /* conteudo itens */
+    #itens{
+        width: 60%;
+        height: auto;
+        min-height: 10px;
+        padding-top: 30px;
+        box-sizing: border-box;
+        background-color: white;
+        float: left;
+        
+    }
+
+    .caixa_conteudo{
+        width: 90%;
+        min-height: 330px;
+        margin-bottom: 20px;
+/*        border: solid 1px black;*/
+        box-shadow: 0px 0px 12px darkgray;
+        border-radius: 10px;
+        overflow: hidden;
+    }
+
+    .caixa_conteudo:hover{
+        box-shadow: 0px 0px 10px gray;
+    }
+
+    .caixa_img{
+        width: 150px;
+        height: 150px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .info_basicas{
+        width: 100%;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        box-sizing: border-box;
+        min-height: 33px;
+        max-height: 66px;
+        overflow: hidden;
+    }
+    
+    .span {
+	   font-size: 16px;
+    }
+    
+    .risco{
+        text-decoration: line-through;
+        margin-right: 20px;
+    }
+
+
+
+
+    /**//* Pagina Promção *//**/
+
+    /*titulo da pagina*/
+    #inicio{
+        width: 100%;
+        height: 200px;
+        background-image: url(../img/bg_ppromocao.jpg);
+        padding-top: 70px;
+    }
+
+    /* conteudo */
+    .produtos_promocoes{
+        width: 100%;
+        min-height: 50px;
+        height: auto;
+        padding-top: 25px;
+        box-sizing: border-box;
+        padding-bottom: 25px;
+        overflow: hidden;
+    }
+
+    .caixa_produto{
+        width: 48%;
+        height: auto;
+        min-height: 300px;
+        margin: 1%;
+        overflow: hidden;
+        float: left;
+    }
+
+    .img_produto{
+        width: 70%;
+        height: 120px;
+        text-align: center;
+    }
+
+    .img_produto img {
+        width: auto;
+        height: auto;
+        max-width: 100%;
+        max-height: 100%;
+    }
+    
+    .info_produto{
+        width: 100%;
+        height: 60%;
+        padding: 5%;
+        box-sizing: border-box;
+    }
+
+    .info_produto h3{
+        text-align: center;
+        padding: 3%;
+        height: 60px;
+    }
+
+    .text_info{
+        width: 100%;
+        min-height: 40px;
+        height: auto;
+    }
+
+    .text_info p, .text_validade p{
+        padding-bottom: 1vh;
+        padding-left: 0px;
+        overflow: hidden;
+    }
+    
+    .text_info .valor{
+	   float: left;
+    }
+    
+    .text_info p span{
+	   float: left;
+        clear: both;
+    }
+
+    .text_validade{
+        width: 100%;
+        min-height: 20px;
+        height: auto;
+        margin-top: 1vh;
+        clear: both;
+    }
+
+
+    /**//*Pagina Produtos do mês*//**/
+    /* Titulo da pagina */
+    #titulo_site{
+        width: 100vw;
+        height: 200px;
+        padding-top: 70px;
+        background-image: url(../img/bg_pmes.jpg);
+    }
+
+    /* conteudos seções */
+    .mes_conteudo{
+        width: 100vw;
+        height: auto;
+        min-height: 300px;
+        box-shadow: 1px 1px 2px #919191;
+        overflow: hidden;
+    }
+    .mes_conteudo h2{
+        text-align: center;
+    }
+
+    .segunda_categoria{
+        color: white;
+    }
+
+    .produto_img{
+        width: 46%;
+        height: auto;
+        max-height: 100%;
+        margin-left: 50px;
+        float: left;
+        margin: 2%;
+    }
+
+    .informacoes{
+        width: 46%;
+        max-height: 100%;
+        height: auto;
+        float: left;
+        box-sizing: border-box;
+        margin: 2%;
+    }
+    
+    .informacoes .desc {
+        width: 100%;
+        max-height: 60px;
+        overflow: hidden;
+    }
+
+    .informacoes p{
+        padding: 1%;
+        box-sizing: border-box;
+    }
+    
+    .informacoes p span {
+	   float: left;
+        clear: both;
+    }
+
+    .segunda_info p{
+        color: white;
+    }
+
+    .info_qtd{
+        float: left;
+        min-height: 50px;
+        height: auto;
+    }
+
+    /**//*Nossas Lojas*//**/
+
+    /* mudar cor conforme a linha */
+    .cor_um{
+        background-color: white;
+    }
+
+    .cor_dois{
+        background-color: darkgray;
+    }
+    /* reajusta a tag p */
+    p{
+        padding-left: 20px;
+    }
+
+    /* seção:nossas lojas */
+    #nossa_lojas{
+        width: 100%;
+        height: 800px;
+        padding-top: 70px;
+    }
+
+    /* titulo */
+    #caixa_titulo{
+        width: inherit;
+        height: 100px;
+    }
+
+    #titulo{
+        padding-top: 20px;
+        padding-left: 30px;
+    }
+
+    /* conteudo da pagina */
+    #conteudo_nossas_lojas{
+        width: inherit;
+        min-height: 250px;
+        height: auto;
+    }
+
+    table{
+        width: inherit;
+        min-height: inherit;
+        height:auto;
+    }
+
+    table, th, td {
+      border: 1px solid black;
+      border-collapse: collapse;
+    }
+
+    th{
+        background-color: gray;
+        color: white;
+    }
+
+    #th_endereco, .endereco{
+        width: 50%;
+        height: 50px;
+    }
+
+    #th_tel, .tel{
+        width: 50%;
+        height: 70px;
+    }
+
+    tr{
+        width: inherit;
+        height: 100px;
+    }
+
+    .endereco, .tel{
+        height: inherit;
+        color: black;
+        font-size: 17px;
+    }
+    
+    .endereco p, .tel p{
+	   padding: 5%;
+    }
+
+
+    /**//*Curiosidades*//**/
+
+    ol li{
+        list-style: circle;
+        font-size: 17px;
+        padding: 5px;
+        margin-left: 7vw;
+    }
+    
+    .txt{
+	   font-size: 17px;
+        text-align: center;
+    }
+
+    /* Titulo da pagina */
+    #curiosidades_titulo{
+        width: 100%;
+        height: 200px;
+        padding-top: 70px;
+        background-image: url(../img/bg_curiosidades.jpg)
+    }
+
+    #subcaixa{
+        width: inherit;
+        height: inherit;
+        background-color: rgba(0,0,0,0.5);
+    }
+    
+    .texto_1{
+        width: 92vw;
+        height: auto;
+        min-height: 50px;
+        margin: 2%;
+    }
+
+    #texto{
+        margin-top: 10px;
+        width: 600px;
+        height: 400px;
+        padding-left: 10px;
+        box-sizing: border-box;
+        float: left;
+
+    }
+
+    /*seção beneficios*/
+    .beneficios{
+        width: inherit;
+        min-height: 120px;
+        overflow: hidden;
+        height: auto;
+        box-sizing: border-box;
+        margin-top: 20px;
+        margin-bottom: 50px;
+    }
+
+    .beneficios_img{
+        width: 40%;
+        min-height: 50px;
+        margin: 5%;
+        float: left;
+    }
+
+    .caixa_texto{
+        width: 96%;
+        min-height: 50px;
+        height: auto;
+        overflow: hidden;
+        float: left;
+        padding: 2%;
+        box-sizing: border-box;
+
+    }
+    
+    .caixa_texto p{
+        padding: 0px;
+	   font-size: 17px;
+    }
+
+    /*seção sucos da empresa*/
+    .sucos_empresa{
+        width: 100%;
+        min-height: 200px;
+        height: auto;
+        clear: both;
+        margin-bottom: 50px;
+        overflow: hidden;
+    }
+
+    .fundo_escuro{
+        width: inherit;
+        min-height: inherit;
+        height: auto;
+        color: white;
+        background-color: rgba(0,0,0,0.5);
+        overflow: hidden;
+        padding-top: 10px;
+        padding-bottom: 50px;
+        box-sizing: border-box;
+    }
+
+    .sucos_empresa h2, .sucos_empresa p{
+        color: white;
+    }
+    .texto_sucos_empresa, .inverso_img , .simples_img{
+        width: 92vw;
+        height: auto;
+        min-height: 50px;
+        max-height: 50vh;
+        margin: 2%;
+
+    }
+    
+    .inverso_img img, .simples_img img{
+	   max-width: 50%;
+    }
+
+    /*seção dica*/
+    .dica{
+        width: 100%;
+        min-height:50px;
+        height: auto;
+        margin-bottom: 50px;
+    }
+
+    .caixa_dica{
+        width: 90%;
+        height: inherit;
+        overflow: hidden;
+        margin: 5%;
+    }
+
+
+    /**//*Sobre a Empresa*//**/
+
+    /*titulo pagina*/
+    #titulo_pg{
+        width: 100vw;
+        height: 200px;
+        padding-top: 70px;
+        background-image: url(../img/bg_sobre.jpg);
+    }
+
+    #fundo{
+        width: inherit;
+        height: inherit;
+        background-color: rgba(0,0,0,0.5);
+    }
+
+    /*SEÇÃO Porque*/
+    .porque{
+        width: 100%;
+        min-height: 400px;
+    }
+
+    .porque_texto, .porque_img{
+        width: 46%;
+        min-height: 400px;
+        height: auto;
+        margin: 2%;
+        float: left;
+    }
+
+
+    .porque_texto {
+        clear: both;
+    }
+
+    /*Seção missao visão e valores*/
+    #m_vi_va{
+        width: 100vw;
+        min-height: 50px;
+        height: auto;
+        background-image: url(../img/bg_sobre2.jpg);
+        overflow: hidden;
+        padding-bottom: 50px;
+        box-sizing: border-box;
+    }
+
+    #m_vi_va h2, #m_vi_va p{
+        color: white;
+    }
+
+    .sobre_conteudo{
+        width: 90%;
+        height: 250px;
+        background-color: rgba(0,0,0,0.5);
+        text-align: center;
+        box-shadow: 3px 3px 10px white;
+        margin: 5%;
+    }
+
+    .sobre_conteudo p{
+        font-size: 20px;
+        padding: 2%;
+    }
+
+    /* siga nos e parceiros */
+    #siga_nos_parceiros{
+        width: 100vw;
+        min-height:100px;
+        height: auto;
+        overflow: hidden;
+        padding-bottom: 50px;
+        box-sizing: border-box;
+
+    }
+
+    .siga_parceiro{
+        width: 46%;
+        height: inherit;
+        float: left;
+        margin: 2%;
+    }
+
+    .siga_parceiro_img{
+        width: 46%;
+        height: auto;
+        min-height: 50%;
+        margin: 2%;
+        float: left;
+        cursor: pointer;
+    }
+
+
+    /**//* Contate Nos*//**/
+
+    #contate{
+        width: 100vw;
+        min-height: 500px;
+        height: auto;
+        padding-top: 70px;
+        overflow: hidden;
+    }
+
+    #contate .txt{
+        text-align: left;
+        padding: 2%;
+    }
+    /*titulo pagina*/
+    #titulo_contate{
+        width: inherit;
+        height: 50px;
+    }
+
+    /*Formulario*/
+    .caixa_inserir, #caixa_mensagem, #caixa_button{
+        width: 100%;
+        height: auto;
+        min-height: 100px;
+        border-bottom: 1px solid;
+        font-size: 18px;
+        border-radius: 10px;
+    }
+
+    #caixa_mensagem{
+        height: 390px;
+    }
+
+    #caixa_button{
+        height: 200px;
+    }
+
+    .input_inserir{
+        width: 92%;
+        height: 30px;
+        font-size: 18px;
+        margin: 4%;
+        margin-top: 0px;
+    }
+
+    .col{
+        width: 100%;
+        height: inherit;
+        box-sizing: border-box;
+    }
+
+    .input_rdo{
+        width: 20px;
+        height: 20px;
+        margin-left: 20px;
+    }
+
+    textarea{
+        width: 70%;
+        height: 300px;
+        margin-left: 20px;
+        resize: none;
+    }
+
+    .input_btn, .input_btn_limpar{
+        width: 120px;
+        height: 50px;
+        font-size: 18px;
+        margin-left: 20px;
+        margin-top: 70px;
+        border: 1px solid black;
+        background-color: white;
+        cursor: pointer;
+    }
+
+    .input_btn_limpar{
+        float: right;
+        margin-right: 20px;
+        text-align: center;
+        padding-top: 12px;
+        box-sizing: border-box;
+    }
+
+    .input_btn_limpar a{
+        color: black;
+    }
+
+    .input_btn:hover, .input_btn_limpar:hover{
+        transform: scale(1.1);
+    }
+
+    /*Exibir banco*/
+    .section{
+        width: 100vw;
+        min-height: 50px;
+        height: auto;
+        overflow: hidden;
+        clear: both;
+    }
+
+    .inherit{
+        width: 100%;
+        min-height: 10px;
+        overflow: hidden;
+        padding-top: 10px;
+        padding-bottom: 50px;
+        box-sizing: border-box;
+    }
+    
+    #container_modal{
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+}
+    
+    .imagem_modal{
+        width: 100%;
+        height: auto;
+        min-height: 10px;
+    }
+
+    .caixa_dados{
+        width: 100%;
+        height: auto;
+        min-height: 50px;
+        box-sizing: border-box;
+        clear: both;
+    }
+    .caixa_dados p{
+        padding: 0px;
+    }
+
+    .modal_dados{
+        width: 100%;
+        min-height: 50px;
+        margin-bottom: 2%;
+    }
+
+    .caixa_catsub {
+        width: 95%;
+        height: 50px;
+        text-align: center;
+        font-size: 20px;
+        line-height: 50px;
+        box-shadow: 0px 0px 5px #919191;
+        margin: 1%;
+        border-radius: 25px;
+    }
+
+    .caixa_compra{
+        width: 98%;
+        height: auto;
+        min-height: 100px;
+        padding: 1%;
+        box-sizing: border-box;
+    }
+
+    .compra_itens{
+        width: 100%;
+        margin-top: 5vh;
+    }
+
+    .caixa_qtd{
+        width: 100%;
+        height: 50px;
+        box-sizing: border-box;
+    }
+
+    .caixa_qtd p {
+        width: 50px;
+        height: 50px;
+        font-size: 25px;
+        text-align: center;
+        border: solid 1px #919191;
+        padding: 0px;
+        font-weight: bold;
+        line-height: 50px;
+        border-radius: 50%;
+        margin: 0px 25px 0px 25px;
+        float: left;
+        cursor: pointer;
+    }
+
+    .caixa_qtd div{
+        width: 70px;
+        height: 50px;
+        font-size: 20px;
+        float: left;
+        border: solid 1px #919191;
+        text-align: center;
+        line-height: 50px;
+    }
+
+    .caixa_qtd p:active{
+        transform: scale(0.8);
+    }
+
+    .caixa_qtd p:hover{
+        box-shadow: 2px 3px 3px #a1a1a1;
+    }
+
+    .modal_dados .btn_detalhes{
+        width: 100%;
+        margin: 0px;
+    }
+}
+
+/*modal*/
+.container{
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    z-index: 999;
+    background-color: rgba(0,0,0,0.8);
+    display: none;
+}
+
+.modal {
+	width: 90vw;
+    height: 90vh;
+    margin: 5vh 5vw;
+    background-color: #ffffff;
+    border-radius: 3vw;
+    padding: 60px 4vw 60px 4vw;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+#fechar {
+	width: 90vw;
+    height: 50px;
+    border-radius: 3vw 3vw 0px 0px;
+    background-color: brown;
+    float: right;
+    color: white;
+    font-size: 20px; 
+    text-align: center;
+    line-height: 50px;
+    cursor: pointer;
+    margin: -60px -4vw -60px -4vw;
+    position: fixed;
+    z-index: 2;
+}
+
+#fechar:active {
+	transform: scale(0.9);
+}
+
+#modal{
+    width: 100%;
+    height: 99%;
+}
